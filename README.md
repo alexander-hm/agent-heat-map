@@ -18,7 +18,7 @@ Short answers: yes and yes.
 | Metric | Entropy-Only | Composite |
 |---|---|---|
 | Detection rate (recall) | 66.7% | **100.0%** |
-| False alarm rate | 50.0% | 50.0% |
+| False alarm rate | 50.0% | 25.0% |
 | Confident-wrong failures caught | 0/8 | **8/8** |
 
 The entropy-only detector misses every single "confidently wrong" failure. The composite detector (entropy + patch complexity) catches all of them with zero additional false alarms.
