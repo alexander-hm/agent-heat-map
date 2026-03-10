@@ -1,0 +1,9 @@
+@@ -2,7 +2,7 @@
+     """Return the index of target in sorted array arr, or -1 if not found."""
+-    low, high = 0, len(arr)
++    low, high = 0, len(arr) - 1
+     while low <= high:
+         mid = (low + high) // 2
+         if arr[mid] == target:
+             return mid
+         elif arr[mid] < target:

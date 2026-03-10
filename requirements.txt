@@ -1,0 +1,20 @@
+# Agent Drift Heatmap — Dependencies
+# Python 3.11+
+
+# Core (required for scripted evaluation)
+pydantic>=2.5.0
+pytest>=7.0.0
+
+# Visualization (required for figures)
+matplotlib>=3.5.0
+
+# Live agent mode (required only for --live-agent)
+openai>=1.12.0
+
+# Native Tinker SDK (required only for --native-client with real logprobs)
+tinker
+transformers
+
+# Original framework deps (not required for evaluation)
+# anthropic>=0.18.0
+# langgraph>=0.0.40

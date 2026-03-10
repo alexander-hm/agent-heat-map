@@ -1,0 +1,9 @@
+@@ -6,6 +6,8 @@
+             result.append(b[j])
+             j += 1
+     # BUG: missing extend of remaining elements from whichever list isn't exhausted
++    result.extend(a[i:])
++    result.extend(b[j:])
+     return result
+ 
+ 

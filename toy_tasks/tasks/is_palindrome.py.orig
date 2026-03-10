@@ -1,0 +1,5 @@
+def is_palindrome(s):
+     """Check if string is a palindrome (case-insensitive, ignoring non-alphanumeric chars)."""
+-    cleaned = s.strip()  # BUG: doesn't lowercase or remove non-alphanumeric characters
++    cleaned = ''.join(char.lower() for char in s if char.isalnum())
+     return cleaned == cleaned[::-1]
